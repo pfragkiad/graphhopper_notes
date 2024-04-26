@@ -11,11 +11,12 @@ sudo apt install openjdk-19-jdk-headless
 sudo apt install maven
 ```
 
+Then edit the `.bashrc` using any text editor:
 ```bash
 nano ~/.bashrc
 ```
 
-Add the following two lines in `.bashrc`:
+and add the following two lines in `.bashrc`:
 
 ```bash
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
